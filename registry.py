@@ -45,7 +45,6 @@ if __name__ == "__main__":
     assert registered_channels() == ["KIOSK", "MOBILE", "WEB"]
     assert isinstance(get_channel_factory("WEB"), WebFactory)
     assert isinstance(get_channel_factory("MOBILE"), MobileFactory)
-    # A seleção é insensível a maiúsculas/minúsculas
     assert isinstance(get_channel_factory("kiosk"), KioskFactory)
 
     print(f"Canais registrados: {registered_channels()}")
